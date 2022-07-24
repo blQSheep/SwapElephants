@@ -16,18 +16,28 @@
                     Console.WriteLine("Calling lloyd.WhoAMi()");
                     lloyd.WhoAmI();
                 }
-                else if(usr_choice == "2")
+                else if (usr_choice == "2")
                 {
                     Console.WriteLine("Calling lucinda.WhoAMi()");
                     lucinda.WhoAmI();
                 }
-                else if( usr_choice == "3")
+                else if (usr_choice == "3")
                 {
                     Console.WriteLine("References have been swapped");
                     Elephant dummy = lloyd;
                     lloyd = lucinda;
                     lucinda = dummy;
-                    
+
+                }
+                else if (usr_choice == "4")
+                {
+                    lloyd = lucinda;
+                    lloyd.EarSize = 4321;
+                    lloyd.WhoAmI();
+                }
+                else
+                {
+                    return;
                 }
             }
             
