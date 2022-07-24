@@ -7,6 +7,7 @@
             Console.WriteLine("Press 1 for Lloyd, 2 for Lucinda, 3 to swap");
             Elephant lloyd = new Elephant() { Name = "Lloyd", EarSize = 40 };
             Elephant lucinda = new Elephant() { Name = "Lucinda", EarSize = 33 };
+
             while (true)
             {
                 string usr_choice = Console.ReadLine();
@@ -34,6 +35,10 @@
                     lloyd = lucinda;
                     lloyd.EarSize = 4321;
                     lloyd.WhoAmI();
+                }else if(usr_choice == "5")
+                {
+
+                    lucinda.SpeakTo(lloyd, "Hi Lloyd!");
                 }
                 else
                 {
